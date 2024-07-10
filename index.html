@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Ordering App</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <img src="./assets/lastmeal.png" alt="logo" />
+        </a>
+        <div class="nav-items">
+          <div class="greetings-container">
+            <p class="greeting-text">Morning Deepak</p>
+            <p class="welcome-text">Welcome Back!</p>
+          </div>
+          <div class="search-box">
+            <span class="search-icon"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input type="search" placeholder="Search" id="search" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="app">
+      <h1>Top Restaurants In Your Area</h1>
+      <section class="filter-sort-container">
+        <select name="Sort by" id="sort">
+          <option value="rating">Sort By rating</option>
+          <option value="eta">Sort By eta</option>
+        </select>
+        <select name="Filter by" id="filter">
+          <option value="all">All</option>
+          <option value="American">American</option>
+          <option value="French">French</option>
+          <option value="Chinese">Chinese</option>
+          <option value="Indian">Indian</option>
+          <option value="Italian">Italian</option>
+        </select>
+      </section>
+
+      <section id="resturant-list">
+        <!-- <div class="resturant-details">
+            <div class="res-img">
+                <img alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/8/20541328/ae5fd8eefe6bc12a66e00c4ac7fb0ee2_featured_v2.jpg?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD">
+            </div>
+            <div class="res-name">
+                <h2>El Pirata</h2>
+                <p>Firenze</p>
+            </div>
+            <div class="res-details">
+                <p class="rating">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    4.5
+                </p>
+                <p class="eta">20 mins</p>
+            </div>
+            <div class="tags">
+                American,Indian,French
+            </div>
+        </div> -->
+   
+         </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
